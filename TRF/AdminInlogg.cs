@@ -154,8 +154,8 @@ namespace TRF
         }
         private void btnbytinfo_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand();
             con.Open();
+            SqlCommand cmd = new SqlCommand();            
             try
             {
                 Medlemmar m = new Medlemmar();

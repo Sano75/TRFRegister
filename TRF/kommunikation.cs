@@ -101,9 +101,10 @@ namespace TRF
            
             try
             {
-                sqlcmd.CommandText = "Uppdate Medlemmar set förnamn= " + m.Namn + " Efternamn=" + m.Efternamn + " Adress= " + m.Adress + " Epost=" + m.Epost + " Telefon= " + m.Telnr + " Mobil= " + m.Mobilnr + " TigerNamn= " + m.Tigernamn + " TigerÅlder= " + m.Tigeralder +"Medlemstyp"+ m.Typ+" WHERE ID=" + m.Id;
-                sqlcmd.CommandType = CommandType.Text;
                 sqlcon.Open();
+                sqlcmd.CommandText = "Update Medlemmar set förnamn= " + m.Namn + " Efternamn=" + m.Efternamn + " Adress= " + m.Adress + " Epost=" + m.Epost + " Telefon= " + m.Telnr + " Mobil= " + m.Mobilnr + " TigerNamn= " + m.Tigernamn + " TigerÅlder= " + m.Tigeralder +"Medlemstyp"+ m.Typ+" WHERE ID=" + m.Id;
+                sqlcmd.CommandType = CommandType.Text;
+                
 
                 sqlcmd.ExecuteNonQuery();
             }
