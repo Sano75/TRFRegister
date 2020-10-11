@@ -20,7 +20,8 @@ namespace TRF
     {
         kommunikation kom = new kommunikation();
         SqlConnection con = new SqlConnection
-            (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TeknikFix\Documents\Visual Studio 2015\Projects\progTvForms\TRFRegister\TRF\TRFDB.mdf;Integrated Security=True");
+            (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\TRFDB.mdf;Integrated Security=True");
+            //Changed to |DataDirectory|
         Inloggning inlog = new Inloggning();
         SqlDataAdapter sqlda;
         SqlDataReader sqldr;
