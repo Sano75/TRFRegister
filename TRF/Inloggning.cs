@@ -15,7 +15,8 @@ namespace TRF
   
     public partial class Inloggning : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TeknikFix\Documents\Visual Studio 2015\Projects\progTvForms\TRFRegister\TRF\TRFDB.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\TRFDB.mdf;Integrated Security=True");
+        //changed static address to  |DataDirectory| 
         public Inloggning()
         {
             InitializeComponent();
