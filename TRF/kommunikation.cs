@@ -22,7 +22,8 @@ namespace TRF
 
         private void  ConnectTo()
         {
-            sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TeknikFix\Documents\Visual Studio 2015\Projects\progTvForms\TRFRegister\TRF\TRFDB.mdf;Integrated Security=True");
+            sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\TRFDB.mdf;Integrated Security=True");
+            //Changed to |DataDirectory|
             sqlcmd = sqlcon.CreateCommand();
         }
 
